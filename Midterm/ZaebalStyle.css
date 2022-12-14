@@ -1,0 +1,245 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  background: url("../img/167320-chelovek_pauk-mir-neboskreb-multfilm-zhest-3840x2160.jpg") ;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 100%;
+  font-family: Rockwell;
+
+}
+.media i{
+  display: none;
+}
+.panel{
+  top: 0;
+  background-color: #222222;
+  height: 60px;
+  display: flex;
+  margin: auto;
+}
+.panel-left{
+  width:45%;
+  padding: 13px 25px ;
+  display: flex;
+  justify-content: space-between;
+}
+.zb{
+  display: none;
+  color: white;
+  margin: auto 0;
+}
+.panel-right{
+  width: 55%;display: flex;
+}
+.divka{
+  width: 70%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: Rockwell;
+
+}
+.media{
+  padding: 18px;
+}
+.inp{
+  max-width: 120px;
+}
+.film{
+  color: white;
+  font-size: 25px;
+  font-family: Impact;
+
+}
+.fotki{
+  display: flex;
+  width: 70%;
+  margin: 3% auto;
+  background-color: #222222;
+  border-radius: 7px;
+  border: 1px solid white;
+  height: auto;
+  justify-content: space-around;
+  padding: 20px;
+  overflow: auto;
+
+}
+.imgg{
+  width: 120px;
+  height: 220px;
+  border-radius: 7px;
+  border: 2px solid #363636;
+  margin: 0 8px;
+
+}
+#inp{
+  border: 1px solid #cccccc;
+  outline:0;
+  border-radius: 4px 0 0 4px;
+}
+
+.flex{
+  display: flex;
+  margin: 20px 15px;
+  background-color: #222222;
+}
+.bb{
+  width: 100%;
+  height: 570px;
+  position: static;
+  background: url("../img/brbad.jpg");
+  background-size: 100% 100%;
+  color: white;
+  padding: 350px 0px 100px 30px;
+  font-family: Rockwell;
+}
+.imggg{
+  width: 300px;
+  height: 420px;
+  margin: 0 100px;
+}
+.card{
+  position: static;
+  background-color: #222222;
+  height: auto;
+  width: 80% ;
+  margin:  0 auto;
+  border-radius: 15px;
+  border: 1px solid white;
+  padding: 0 20px;
+  margin: auto;
+  color: white;
+}
+.film-photo{
+  width: 25%;
+  box-shadow: 0 5px 11px #cccccc;
+  border-radius: 10px;
+}
+.div-film{
+  border-bottom: 2px solid #363636;
+  display: flex;
+  flex-direction: column;
+}
+.pot{
+  color: white;
+  margin: 20px 0 0 0;
+}
+.flex{
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+.opp{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0 20px;
+  font-size: 18px;
+}
+.ffilm{
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 800px){
+  .media{
+    justify-content: space-between;
+  }
+  .divka{
+    display: none;
+  }
+  .zb{
+    display: unset;
+    width: auto;
+  }
+  .panel-right{
+    display: none;
+  }
+  .flex{
+    display: block;
+  }
+  .opp{
+    padding: 20px;
+  }
+  .panel-left{
+    width:100%;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .media i{
+    display: unset;
+    color: white;
+    margin: 30px 5px 0 5px;
+    font-size: 22px;
+  }
+  .film-photo{
+    width: 50%;
+    margin: 0 25%;
+  }
+}
+footer{
+  padding-top: 30px;
+  background-color: black;
+  /*width: 100%;*/
+  color: #727272;
+  font-size: 16px;
+  font-family: 'Twentytwelv',Arial,sans-serif;
+  justify-content: space-around;
+  display: flex;
+  margin: 20px 0 0 0 ;
+}
+.logo{
+  color: white;
+  font-size: 25px;
+  font-family: Impact;
+}
+.menu2 a, .address{
+  text-transform: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15.5px;
+  font-family: 'Arial',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 500;
+  background-position: center center;
+}
+.menu2 li{
+  margin-bottom: 10px;
+}
+.vl{
+  border-left: 1px solid white;
+}
+.office{
+  background-position: center center;
+  padding: 13px;
+}
+.address {
+  margin-top: 10px;
+}
+@media screen and (max-width: 400px){
+  .film-photo{
+    width: 75%;
+    margin: 0 12%;
+  }
+  .fotki{
+    width: 90%;
+  }
+  .ffilm{
+    font-size: 10px;
+  }
+  .opp{
+    font-size: 14px;
+  }
+  .div-film{
+    font-size: 10px;
+  }
+}
+
+

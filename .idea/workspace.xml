@@ -10,16 +10,27 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "C:/Users/abdul/OneDrive/Документы/GitHub/Rep"
+    "DefaultHtmlFileTemplate": "HTML File",
+    "last_opened_file_path": "C:/Users/abdul/OneDrive/Документы/GitHub/Rep/Lab_3"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abdul\OneDrive\Документы\GitHub\Rep\Lab_3" />
+      <recent name="C:\Users\abdul\OneDrive\Документы\GitHub\Rep\Lab_2" />
+      <recent name="C:\Users\abdul\OneDrive\Документы\GitHub\Rep\Lab_1" />
       <recent name="C:\Users\abdul\OneDrive\Документы\GitHub\Rep" />
     </key>
   </component>

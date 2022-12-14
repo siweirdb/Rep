@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .date_time{
+      color: gray;
+      border-radius: 2px;
+      width: 30%;
+      border: 1px solid gray;
+      padding: 8px;
+    }
+    .sub{
+      border: 2px solid white;
+      color:white;
+      padding: 10px;
+      width: 80%;
+      background-color: #43b56a;
+      font-size: 20px;
+      display: block;
+      margin: 10px auto;
+    }
+    .inp{
+      color: gray;
+      border-radius: 2px;
+      width: 80%;
+      border: 1px solid gray;
+      padding: 8px;
+      display: block;;
+      margin: 10px auto;
+      background-color: #80808014;
+    }
+  </style>
+</head>
+<body style="background-color: #80808026">
+<div style="box-shadow: 5px 5px 5px 5px #80808033;color:gray;margin: 60px auto;background-color: white; width: 30%; padding: 15px 30px;border-radius: 5px  ">
+  <form onsubmit="sign()" id="form1">
+  <input id = "email" class="inp" type="email" name="Email" placeholder="Enter your email" autocomplete="on">
+  <input id = "password" class="inp" type="password" placeholder="Enter your password" name="Password">
+  <input id = "image" class="inp" type="file" placeholder="Submit image" name = "image">
+  <input id = "full" class="inp" type="text" placeholder="Enter full name" name = "fulln">
+  <div style=" display:flex;justify-content: space-between; width: 80%; margin: 10px auto">
+    <input id = "date" aria-label="date" class="date_time" type = "date" name="date">
+    <input id = "hour" aria-label="hour" class="date_time" type="time" name = "time">
+  </div>
+  <div style="display: flex; justify-content: space-around; width: 60%;margin: auto">
+    <input id="radio" type="radio" name = "gender" value="Male">
+    <label for="radio" >Male</label>
+    <input id="radiobut" type="radio" name = "gender" value="Female">
+    <label for="radiobut">Female</label>
+  </div>
+  <div style=" display:flex;justify-content: space-between; width: 80%; margin: 10px auto;">
+    <input id = "color" aria-labelledby="col" style="border-radius: 2px;width: 37%;border: 1px solid gray;height: 40px" type="color" name = "color">
+    <select id ="select" style="border-radius: 2px;width: 37%;border: 1px solid gray;height: 40px" type="color" name = "color">
+      <option></option>
+      <option>Kazakhstan</option>
+      <option>Russia</option>
+      <option>Portugal</option>
+    </select>
+  </div>
+    <div style="display: flex; justify-content: center">
+  <textarea id = "area" placeholder="Your favorite car" name="w3review" rows="3" cols="40%"  ></textarea>
+    </div>
+
+  <input class="sub" type="submit" value="Submit">
+  </form>
+  <p style="text-align: center">Have an account? <a href="Lab%207%20Log.html" style="text-decoration: none; color: #1c233fd1">Sign in</a></p>
+</div>
+
+<script>
+  function sign(){
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var image = document.getElementById('image').value;
+    var full = document.getElementById('full').value;
+    var date = document.getElementById('date').value;
+    var hour = document.getElementById('hour').value;
+    var color = document.getElementById('color').value;
+    var select = document.getElementById('select').value;
+    var area = document.getElementById('area').value;
+    var gender = document.getElementsByName('gender');
+
+    for (let i = 0; i < gender.length; i++) {
+      if(gender[i].checked){
+        var sign = {
+          email: email,
+          password: password,
+          image: image,
+          full: full,
+          date: date,
+          hour: hour,
+          color: color,
+          select: select,
+          area: area,
+          gender: gender[i].value
+        };
+      }
+    }
+    var json = JSON.stringify(sign);
+    localStorage.setItem(sign,json);
+    localStorage.setItem(email,password);
+  }
+</script>
+</body>
+</html>

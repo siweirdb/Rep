@@ -1,0 +1,213 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  background-color: #222222;
+  background-size: 100% 100%;
+  height: 100%;
+  font-family: Rockwell;
+}
+.media i{
+  display: none;
+}
+.panel{
+  top: 0;
+  background-color: #222222;
+  height: 60px;
+  display: flex;
+  margin: auto;
+}
+.panel-left{
+  width:45%;
+  padding: 13px 25px ;
+  display: flex;
+  justify-content: space-between;
+}
+.zb{
+  display: none;
+  color: white;
+  margin: auto 0;
+}
+.panel-right{
+  width: 55%;display: flex;
+}
+.divka{
+  width: 70%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: Rockwell;
+
+}
+.media{
+  padding: 18px;
+}
+.inp{
+  max-width: 120px;
+}
+.film{
+  color: white;
+  font-size: 25px;
+  font-family: Impact;
+}
+.flex{
+  display: flex;
+  margin: 20px 15px;
+  background-color: #222222;
+}
+.opp {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0 20px;
+  font-size: 18px;
+}
+.opi{
+  padding: 4px;
+  margin: 15px 0;
+  background-color: #171717;
+  height: auto;
+  width: auto;
+}
+.bb{
+  width: auto;
+  height: auto;
+  background: url("../img/wallpaper2you_88671.jpg") no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  color: white;
+  padding: 320px 0px 100px 30px;
+  font-family: Rockwell;
+}
+.size{
+  font-size: 20px;
+}
+.imggg{
+  width: 300px;
+  height: 420px;
+}
+.screen-photo{
+  width: 200px;
+  height: auto;
+  border: 1px solid gray;
+}
+.screenshots{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 20px auto;
+  height: auto;
+  padding: 12px;
+  overflow: auto;
+}
+
+
+@media only screen and (max-width: 800px){
+  .imggg{
+    width: 40%;
+    margin: 0 30%;
+  }
+  .opp{
+    margin: 20px 0;
+  }
+  .media{
+    justify-content: space-between;
+  }
+  .divka{
+    display: none;
+  }
+  .zb{
+    display: unset;
+    width: auto;
+  }
+  .panel-right{
+    display: none;
+  }
+  .panel-left{
+    width:100%;
+  }
+  .media i{
+    display: unset;
+    color: white;
+    margin: 30px 5px 0 5px;
+    font-size: 22px;
+  }
+  .flex{
+    display: block;
+  }
+}
+
+footer{
+  padding-top: 30px;
+  background-color: black;
+  /*width: 100%;*/
+  color: #727272;
+  font-size: 16px;
+  font-family: 'Twentytwelv',Arial,sans-serif;
+  justify-content: space-around;
+  display: flex;
+  margin: 20px 0 0 0 ;
+}
+.logo{
+  color: white;
+  font-size: 25px;
+  font-family: Impact;
+}
+.menu2 a, .address{
+  text-transform: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15.5px;
+  font-family: 'Arial',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 500;
+  background-position: center center;
+}
+.menu2 li{
+  margin-bottom: 10px;
+}
+.vl{
+  border-left: 1px solid white;
+}
+.office{
+  background-position: center center;
+  padding: 13px;
+}
+.address {
+  margin-top: 10px;
+}
+@media screen and (max-width: 400px){
+  .size{
+    font-size: 12px;
+  }
+  .bb{
+    padding: 250px 0px 70px 30px;
+  }
+  .ffilm{
+    font-size: 10px;
+  }
+  .opp{
+    font-size: 14px;
+  }
+  .div-film{
+    font-size: 10px;
+  }
+  .imggg{
+    height: 40%;
+    width: 60%;
+    margin: 0 20%;
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .sub{
+      border: 2px solid white;
+      color:white;
+      padding: 10px;
+      width: 80%;
+      background-color: #43b56a;
+      font-size: 20px;
+      display: block;
+      margin: 10px auto;
+    }
+    .inp{
+      color: gray;
+      border-radius: 2px;
+      width: 80%;
+      border: 1px solid gray;
+      padding: 8px;
+      display: block;;
+      margin: 10px auto;
+      background-color: #80808014;
+    }
+  </style>
+</head>
+<body style="background-color: #80808026">
+<div style="box-shadow: 5px 5px 5px 5px #80808033;color:gray;margin: 60px auto;background-color: white; width: 30%; padding: 15px 30px;border-radius: 5px  ">
+  <form onsubmit="sign()" id="form1">
+    <input id = "email" class="inp" type="email" name="Email" placeholder="Enter your email" autocomplete="on">
+    <input id = "password" class="inp" type="password" placeholder="Enter your password" name="Password">
+    <div id="result" style="color: red;text-align: center; margin: auto; font-size: 13px">sdsd</div>
+    <input class="sub" type="submit" value="Submit">
+  </form>
+  <p style="text-align: center">Don't have an account? <a href="Lab%207.html" style="text-decoration: none; color: #1c233fd1">Sign up</a></p>
+</div>
+
+<script>
+  document.getElementById('result').style.display = 'none';
+  function sign(e){
+    event.preventDefault();
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var res_divka = document.getElementById('result');
+    if(localStorage.getItem(email) == password){
+      console.log('molodec');
+      window.location.href = 'Boot.html';
+    }else{
+      console.log('ne prav');
+      document.getElementById('result').style.display = 'block';
+      res_divka.innerHTML = 'Wrong email or password';
+    }
+  }
+</script>
+</body>
+</html>

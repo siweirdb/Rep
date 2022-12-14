@@ -1,0 +1,68 @@
+body{
+  background: url("../img/pexels-stephan-seeber-1261728.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: Rockwell;
+  line-height: 1.5;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.about{
+  margin: 28px 51px;
+  color: white;
+}
+.my{
+  color: white;
+  text-align: center;
+  margin: 0px 0px 20px 0px ;
+}
+table, td, th {
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 10px;
+  margin: 0px auto;
+  width: 700px;
+}
+th{
+  background-color: #727272;
+  font-size: 18px;
+}
+td{
+  background-color: #D9D9D9;
+  font-size: 11px;
+  color: black;
+}
+.niz{
+  text-align: center;
+  color: white;
+  background-color: black;
+  height: 31px;
+}
+.bot{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+}
+.bottom{
+  padding: 15px 0;
+  height: 58px;
+  background-color: #212121;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.blue{
+  color: blue;
+}
+.black{
+  color: rgba(0, 0, 0, 0.5);
+}

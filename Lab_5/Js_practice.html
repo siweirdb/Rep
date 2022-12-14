@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    .div{
+      background-color: #212121;
+      border: 2px solid #555555;
+      color: white;
+      font-size: 20px;
+      display: inline;
+      padding: 10px;
+      text-align: center;
+      align-items: center;
+      margin-right: 15px;
+    }
+    .but{
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+<div style=" margin: 20px; ">
+  <div class="div" id = "hor">Horse</div>
+  <div class="div" id = "kz">Kazakhstan</div>
+  <div class="div" id = "ban">Banana</div>
+  <div class="div" id = "turk">Turkey</div>
+  <div class="div" id = "apl">Apple</div>
+  <div class="div" id = "pan">Panda</div>
+  <div class="div" id = "be">Bear</div>
+  <div class="div" id = "usa">USA</div>
+  <div class="div" id = "kiw">Kiwi</div>
+</div>
+<div style="display:flex;justify-content: space-around;width: 330px">
+  <button class="but" id = "but" onclick=but1()>Fruits</button>
+  <button class="but" onclick="but2()">Countries</button>
+  <button class="but" onclick="but3()">Animals</button>
+  <button class="but" onclick="res()">Show all</button>
+</div>
+
+
+  <script>
+    var arr = ["Horse","Kazakhstan","Banana","Turkey","Apple","Panda","Bear","USA","Kiwi"];
+    function res(){
+      document.getElementById("hor").innerHTML = arr[0];
+      document.getElementById("kz").innerHTML = arr[1];
+      document.getElementById("ban").innerHTML = arr[2];
+      document.getElementById("turk").innerHTML = arr[3];
+      document.getElementById("apl").innerHTML = arr[4];
+      document.getElementById("pan").innerHTML = arr[5];
+      document.getElementById("be").innerHTML = arr[6];
+      document.getElementById("usa").innerHTML = arr[7];
+      document.getElementById("kiw").innerHTML = arr[8];
+    }
+    function but1(){
+      document.getElementById("hor").innerHTML = arr[2];
+      document.getElementById("kz").innerHTML = arr[8];
+      document.getElementById("ban").innerHTML = arr[3];
+      document.getElementById("turk").innerHTML = "";
+      document.getElementById("apl").innerHTML = "";
+      document.getElementById("pan").innerHTML = "";
+      document.getElementById("be").innerHTML = "";
+      document.getElementById("usa").innerHTML = "";
+      document.getElementById("kiw").innerHTML = "";
+    }
+    function but2(){
+      document.getElementById("hor").innerHTML = arr[1];
+      document.getElementById("kz").innerHTML = arr[4];
+      document.getElementById("ban").innerHTML = arr[7];
+      document.getElementById("turk").innerHTML = "";
+      document.getElementById("apl").innerHTML = "";
+      document.getElementById("pan").innerHTML = "";
+      document.getElementById("be").innerHTML = "";
+      document.getElementById("usa").innerHTML = "";
+      document.getElementById("kiw").innerHTML = "";
+    }
+    function but3(){
+      document.getElementById("hor").innerHTML = arr[0];
+      document.getElementById("kz").innerHTML = arr[5];
+      document.getElementById("ban").innerHTML = arr[6];
+      document.getElementById("turk").innerHTML = "";
+      document.getElementById("apl").innerHTML = "";
+      document.getElementById("pan").innerHTML = "";
+      document.getElementById("be").innerHTML = "";
+      document.getElementById("usa").innerHTML = "";
+      document.getElementById("kiw").innerHTML = "";
+    }
+  </script>
+</body>
+</html>
